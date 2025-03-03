@@ -40,10 +40,8 @@ Antes de ejecutar cualquier `docker-compose.yml`, asegúrate de tener instalado:
 
 ## 📌 Lista de Proyectos
 Aquí algunos de los proyectos disponibles en este repositorio:
-- 📦 **mongodb-container** - Base de datos MongoDB con persistencia de datos.
-- 🐘 **postgres-compose** - PostgreSQL con volumen persistente y usuario personalizado.
-- 🏗 **nginx-proxy** - Servidor Nginx configurado como proxy inverso.
-- 🖥 **dev-environment** - Entorno de desarrollo con múltiples servicios.
+- 📦 **cloudBucket** - Bucket de almacenamiento usando MinIO.
+- 🐘 **testNextCloud** - Nextcloud es una nube personal que se puede personalizar, incluye una nube de archivos (como google drive), grupos, chats y reuniones, y mucho mas.
 
 ## ✨ Contribuciones
 Si deseas contribuir con más configuraciones de `docker-compose`, siéntete libre de hacer un **fork** y enviar un **pull request**. También puedes sugerir mejoras en la sección de **issues**.
@@ -52,5 +50,5 @@ Si deseas contribuir con más configuraciones de `docker-compose`, siéntete lib
 Este repositorio está bajo la licencia **MIT**, por lo que puedes usar y modificar los archivos libremente.
 
 ---
-💡 *Si te gusta este repositorio, ¡dale una estrella ⭐ y sígueme para más contenido!*
+💡 *Si te gusta este repositorio, ¡dale una estrella ⭐!*
 

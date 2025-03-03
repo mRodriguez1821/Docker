@@ -1,0 +1,30 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Qwerty123.
+      MYSQL_DATABASE: testnextcloud
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  nextcloud:
+    image: nextcloud:latest
+    container_name: nextcloud
+    restart: always
+    ports:
+      - "8085:80"
+    volumes:
+      - nextcloud_data:/var/www/html
+    depends_on:
+      - mysql
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_DATABASE=testnextcloud
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=Qwerty123.
+
+volumes:
+  mysql_data:
+  nextcloud_data:

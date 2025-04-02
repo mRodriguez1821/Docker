@@ -1,0 +1,79 @@
+<ECF>
+<Encabezado>
+<Version>1.0</Version>
+<IdDoc>
+<TipoeCF>34</TipoeCF>
+<eNCF>E340000000010</eNCF>
+<IndicadorNotaCredito>0</IndicadorNotaCredito>
+<IndicadorMontoGravado>0</IndicadorMontoGravado>
+<TipoIngresos>01</TipoIngresos>
+<TipoPago>1</TipoPago>
+</IdDoc>
+<Emisor>
+<RNCEmisor>130047596</RNCEmisor>
+<RazonSocialEmisor>UNIREFRI S.R.L</RazonSocialEmisor>
+<DireccionEmisor>Ave. San Martín No.64, Don Bosco </DireccionEmisor>
+<NumeroFacturaInterna>20000199</NumeroFacturaInterna>
+<FechaEmision>10-03-2025</FechaEmision>
+</Emisor>
+<Comprador>
+<RNCComprador>132163567</RNCComprador>
+<RazonSocialComprador>AGROBANCOLA SRL</RazonSocialComprador>
+</Comprador>
+<Totales>
+<MontoGravadoTotal>805.08</MontoGravadoTotal>
+<MontoGravadoI1>805.08</MontoGravadoI1>
+<ITBIS1>18</ITBIS1>
+<TotalITBIS>144.91</TotalITBIS>
+<TotalITBIS1>144.91</TotalITBIS1>
+<MontoTotal>949.99</MontoTotal>
+</Totales>
+</Encabezado>
+<DetallesItems>
+<Item>
+<NumeroLinea>1</NumeroLinea>
+<IndicadorFacturacion>1</IndicadorFacturacion>
+<NombreItem>ABANICO USB 5" AZUL</NombreItem>
+<IndicadorBienoServicio>1</IndicadorBienoServicio>
+<CantidadItem>1.00</CantidadItem>
+<UnidadMedida>43</UnidadMedida>
+<PrecioUnitarioItem>338.98</PrecioUnitarioItem>
+<MontoItem>338.98</MontoItem>
+</Item>
+<Item>
+<NumeroLinea>2</NumeroLinea>
+<IndicadorFacturacion>1</IndicadorFacturacion>
+<NombreItem>ABANICO USB 6" AZUL</NombreItem>
+<IndicadorBienoServicio>1</IndicadorBienoServicio>
+<CantidadItem>1.00</CantidadItem>
+<UnidadMedida>43</UnidadMedida>
+<PrecioUnitarioItem>466.10</PrecioUnitarioItem>
+<MontoItem>466.10</MontoItem>
+</Item>
+</DetallesItems>
+<InformacionReferencia>
+<NCFModificado>E320000000005</NCFModificado>
+<FechaNCFModificado>10-03-2025</FechaNCFModificado>
+<CodigoModificacion>1</CodigoModificacion>
+</InformacionReferencia>
+<FechaHoraFirma>10-03-2025 10:46:41</FechaHoraFirma>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<Reference URI="">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<DigestValue>GlT69RaRFKed34wWZ0vnLURJPL90lacGBGc9hkChDsU=</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>S9fExS5Ms/+xJ7NxpDHPJt4SPAxYQHQKFxAAjF1PcjAa+vGmbKjjheDdqXt8LdS4UeaFjeOx3WEnpEweE6PrLy97EUNNgvU0lg9Kx5LaNcn+5vTUSapnsXjlhTC8lRNgRW5r5QHZayr28aG1c34/OXnagiICwf2eKNFJWv73mb3QNrh1tCcGQc3cKm0DgUhcwYyeDURtShBvXiBGcOBKFfdowutWvsBcG0t0BSI4fPKFNc3OPixI7MmyJY5TOApqu4y4V9Ym0vkU7T7PA9remVEzMGETXEAX+5zHpSOBD+lNf0GXqrb5PS3J/V2kTgSg13r/Du+4pvZjF8gtJLOE5A==</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>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</X509Certificate>
+</X509Data>
+</KeyInfo>
+</Signature>
+</ECF>

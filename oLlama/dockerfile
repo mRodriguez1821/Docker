@@ -1,0 +1,13 @@
+# Usa la imagen oficial de Ollama
+FROM ollama/ollama
+
+# Expone el puerto de Ollama
+EXPOSE 11434
+
+# Descarga un modelo por defecto (puedes cambiar 'mistral' por otro)
+#RUN ollama pull mistral
+
+# Comando por defecto para iniciar el chat en la terminal
+#CMD ["ollama", "chat", "mistral"]
+
+# modelos posibles ["mistral", "gemma", "llama2", "codellama"]

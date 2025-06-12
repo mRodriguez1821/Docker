@@ -1,0 +1,47 @@
+services:
+  ollama:
+    image: ollama/ollama #:0.5.9
+    ports:
+      - 11434:11434
+    volumes:
+      - ollama_data:/root/.ollama
+    healthcheck:
+      test: ollama list || exit 1
+      interval: 10s
+      timeout: 30s
+      retries: 5
+      start_period: 10s
+    deploy:
+      # resources:
+      #   reservations:
+      #     devices:
+      #       - driver: nvidia
+      #         count: 1
+      #         capabilities: [ gpu ]
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:main
+    environment:
+      - OLLAMA_API_BASE_URL=http://ollama:11434/api
+    ports:
+      - 8808:8080
+    volumes:
+      - open_webui_data:/app/backend/data
+    extra_hosts:
+      - host.docker.internal:host-gateway
+  ollama-pull--mistral:
+    image: curlimages/curl:8.6.0
+    command: >-
+      http://ollama:11434/api/pull -d '{"name": "mistral-nemo"}'
+    depends_on:
+      ollama:
+        condition: service_healthy
+  ollama-pull--deepseek-r1-8b:
+    image: curlimages/curl:8.6.0
+    command: >-
+      http://ollama:11434/api/pull -d '{"name": "deepseek-r1:8b"}'
+    depends_on:
+      ollama:
+        condition: service_healthy
+volumes:
+  ollama_data:
+  open_webui_data:

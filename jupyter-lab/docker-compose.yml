@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: my-jupyter  # etiqueta local
+    container_name: jupyterlab
+    ports:
+      - "8182:8182"
+    volumes:
+      - ./data:/home/jovyan/work
+    user: root
+    restart: unless-stopped
